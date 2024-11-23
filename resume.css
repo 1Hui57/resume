@@ -1,4 +1,4 @@
-body{
+    body{
     margin: 0; padding: 0;
     font-family: Microsoft JhengHei, 'Times New Roman', Times, serif;
     background-color:#f3f3f3;
@@ -10,6 +10,7 @@ body{
         background-color:#f3f3f3;
         width: 100%;
         position:sticky;
+        top:0;
     }
     
     .top-left-list{
@@ -21,14 +22,31 @@ body{
         text-align: center;
     }
     
+    .top-left-list:nth-child(4){
+        margin-right: 40px;
+    }
+
     .top-right-list{
         flex: none;
         margin-left: auto;
-        font-size: 17px;
-        font-weight: bold;
-        color: rgb(66, 66, 66);
+        font-size: 18px;
+        font-weight:bolder;
+        color: rgb(255, 255, 255);
         text-align: center;
-        margin-right: 20px;
+        border-radius: 0px 0px 0px 40px;
+        background-color: #b2958b;
+        height:80px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 130px;
+        box-shadow: 5px 5px peru;
+    }
+    .top-right-list:hover{
+        background-color: peru;
+        cursor: pointer;
+        font-size: 20px;
+        box-shadow: 5px 5px #b2958b;
     }
     
     .circle{
@@ -36,13 +54,21 @@ body{
         margin-left: 20px;
     }
     
+    .main{
+        width: 90%;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .main-picture{
         background-image: url('./歐嚕插畫.JPG');
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        height: 360px;
-        display: flex; justify-content: flex-end;
+        height: 500px;
+        border-radius: 80px;
+        /* background: url(./歐嚕插畫.JPG) no-repeat center center;
+        background-size: cover; */
     }
 
     .main-text{
@@ -59,3 +85,77 @@ body{
         padding: 30px;
     }
     
+    .first-box{
+        margin-top: 70px;
+        background-color: #b2958b;
+    }
+
+    .box-title{
+        font-size: 35px;
+        font-weight: bold;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+    .box-content{
+        margin-top: 50px;
+        display: flex;
+        justify-content:center
+
+    }
+    .box-square{
+        width: 300px;
+        height: 400px;
+        background-color: white;
+        margin: 20px;
+        border-radius: 30px;
+        font-size: 18px;
+
+        transition: 0.8s;
+        /* cursor: pointer;(滑鼠變手指) */
+    }
+
+    /* .box-square:hover{
+        background-color:#ffeadf ;
+        width: 400px;
+        height: 500px;
+    } */
+
+    .box-title2{
+        font-size: 80px;
+        font-weight: bold;
+        text-align: center;
+        color: rgb(122, 63, 50);
+        font-family: "Bungee";
+    }
+
+    .box-title2:nth-child(1){
+        margin-right: 30%;
+        padding-top: 50px;
+    }
+
+    .box-title2:nth-child(2){
+        margin-left: 20%;
+        margin-bottom: 50px;
+    }
+
+    .background-picture{
+        background-image: url('背景樹.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    
+    .second-box{
+        background-color: #f09778;
+        display: flex;
+        justify-content: center;
+    }
+
+    .motivation-box{
+        width: 250px;
+        height: 100px;
+        text-align: center;
+
+    }
