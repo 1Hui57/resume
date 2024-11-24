@@ -11,6 +11,7 @@
         width: 100%;
         position:sticky;
         top:0;
+        z-index: 1;
     }
     
     .top-left-list{
@@ -154,8 +155,120 @@
     }
 
     .motivation-box{
-        width: 250px;
-        height: 100px;
-        text-align: center;
+        width: 280px;
+        height: 130px;
+        background-color: whitesmoke;
+        border-radius: 30px;    
+    }
 
+    .rotate-left{
+        animation: slide-up-down-left 2s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        position: relative;
+    }
+    .rotate-right{
+        animation: slide-up-down-right 1.8s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        position: relative;
+        
+    }
+    .rotate-left::before{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 20px 0px 20px;
+        border-color: whitesmoke transparent transparent transparent;
+        position: absolute;
+        bottom: -30px;
+        right: 50px;
+    }
+
+    .rotate-right::after{
+        content:'';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 40px 20px 0px 20px;
+        border-color: whitesmoke transparent transparent transparent;
+        position: absolute;
+        bottom: -30px;
+        left: 50px;
+    }
+
+    @keyframes slide-up-down-left{
+        from{
+            transform: rotate(-10deg)translateY(-40px) translateX(25px);  
+        }
+        to{
+            transform: rotate(-10deg) translateY(-60px) translateX(25px);
+        }
+    }
+
+    @keyframes slide-up-down-right{
+        from{
+            transform: rotate(10deg)translateY(0px)translateX(10px);  
+        }
+        to{
+            transform: rotate(10deg) translateY(-20px) translateX(10px);
+        }
+    }
+
+    .subtitle-box{
+        position: absolute;
+        transform: translate(20px,-20px);
+        background-color: rgb(150, 85, 71);
+        padding: 10px 25px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        /* #ebccd1 淡粉色*/
+        /* #f7caba  雲朵淡粉色*/
+    }
+
+    .text{
+        height: 90%;
+        width: 90%;
+        margin: 20px 10px;
+        font-size: 15px;
+    }
+
+    p{
+        padding: 10px 20px;
+        line-height: 25px;
+    }
+
+    .second-box-content{
+        width: 100%;
+        background-color: #f09778;
+        transform: translateY(-5px);
+        display: flex;
+        justify-content: center;
+    }
+
+    .motivation-content{
+        width: 80%;
+        background-color: whitesmoke;
+        border-radius: 30px;
+        box-shadow: 15px 15px #f7caba;
+    }
+
+    .motivation-content-title{
+        height: 150px;
+        font-size: 40px;
+        font-weight: bold;
+        color:rgb(150, 85, 71) ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .motivation-content-text{
+        height: 300px;
+        text-align: center;
+        background-color: rgb(150, 85, 71);
+        
     }
