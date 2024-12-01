@@ -358,8 +358,8 @@
         height: 150px;
     }
     .fourth-box{
-        height: 600px;
-        background-color: #d2f1fd;
+        /* background-color: #d2f1fd; */
+        background: linear-gradient(to bottom, #d2f1fd 0%,#79cbce 80% );
     }
 
     .background-picture3{
@@ -374,3 +374,12 @@
     .padding-top100{
         padding-top: 100px;
     }
+
+    .text-color-white{
+        color: whitesmoke;
+    }
+
+    
+     .position-relative{
+        position: relative;
+     }
