@@ -1,8 +1,10 @@
 :root {
-    --fish-animate-time: 4s;
-    --fish-animate-distance: 70px;
-    --fish-animate-time-5s: 5s;
-    --fish-animate-distance: 70px;
+    --fish-animate-time: 6s;
+    --fish-animate-distance: 140px;
+    --fish-animate-time-2: 7s;
+    --fish-animate-distance-2: 130px;
+    --fish-animate-time-3: 6.5s;
+    --fish-animate-distance-3: 110px;
 }
 .fish-picture{
     position: absolute;
@@ -30,26 +32,34 @@
 }
 .fish-picture2{
     position: absolute;
-    left: 100px;
-    bottom: -50px;
-    animation: slide-from-right-to-left var(--fish-animate-time-5s) infinite;
+    left: 160px;
+    /* bottom: -50px; */
+    animation: slide-from-right-to-left2 var(--fish-animate-time-2) infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes slide-from-right-to-left{
+@keyframes slide-from-right-to-left2{
     0%{
-        transform: translateX(0);
+        transform: translateX(0) translateY(170px);
     }
     48%{
-        transform: translateX(calc(-1 * var(--fish-animate-distance)));
+        transform: translateX(calc(-1 * var(--fish-animate-distance-2))) translateY(170px);
     }
     51%{
-        transform:  translateX(calc(-1 * var(--fish-animate-distance)))  scaleX(-1);
+        transform:  translateX(calc(-1 * var(--fish-animate-distance-2)))  scaleX(-1) translateY(170px);
     }
     97%{
-        transform:  translateX(0px) scaleX(-1);
+        transform:  translateX(0px) scaleX(-1) translateY(170px);
     }
     100%{
-        transform: scaleX(1);
+        transform: scaleX(1) translateY(170px);
     }
+}
+
+.fish-picture3{
+    position: absolute;
+    right: 100px;
+    /* bottom: -50px; */
+    animation: slide-from-right-to-left2 var(--fish-animate-time-3) infinite;
+    animation-timing-function: ease-in-out;
 }
