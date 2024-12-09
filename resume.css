@@ -325,10 +325,15 @@
     }
 
     .motivation-content{
-        width: 80%;
+        width: 70%;
+        height: fit-content;
         background-color: whitesmoke;
         border-radius: 30px;
         box-shadow: 15px 15px #f7caba; 
+        color: #f3f3f3;
+        font-size: 16px;
+        line-height:25px;
+        
     }
 
     .motivation-content-title{
@@ -346,6 +351,8 @@
         text-align: center;
         background-color: rgb(150, 85, 71);
         border-radius: 0 0 30px 30px;
+        width: 100%;
+        height: fit-content;
     }
 
     .background-picture2{
