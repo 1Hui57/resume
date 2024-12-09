@@ -1,4 +1,5 @@
-    body{
+@media(max-width:690px){
+body{
     margin: 0; padding: 0;
     font-family: Microsoft JhengHei, 'Times New Roman', Times, serif;
     background-color:#f3f3f3;
@@ -16,10 +17,10 @@
     
     .top-left-list{
         flex: none;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: bold;
         color: rgb(66, 66, 66);
-        margin-left: 40px;
+        margin-left: 3%;
         text-align: center;
     }
     .top-left-list:hover{
@@ -27,17 +28,18 @@
         transition: 0.5s;
         cursor: pointer;
     }
-    .top-left-list:nth-child(1){
-        width: 200px;
-    }
     
+    .top-left-list:nth-child(1){
+        width: 140px;
+    }
     /* .top-left-list:nth-child(4){
         margin-right: 40px;
     } */
 
     .top-right-list{
-        flex: none;
-        margin-left: auto;
+        /* flex: none; */
+        display: none;
+        /* margin-left: auto;
         font-size: 18px;
         font-weight:bolder;
         color: rgb(255, 255, 255);
@@ -50,7 +52,7 @@
         display: flex;
         width: 130px;
         box-shadow: 5px 5px peru;
-        transition: 0.5s;
+        transition: 0.5s; */
     }
     .top-right-list:hover{
         background-color: peru;
@@ -115,15 +117,16 @@
     .box-content{
         margin-top: 50px;
         display: flex;
-        justify-content:center;
         flex-wrap: wrap;
+        justify-content:center;
+        width: 80%;
+
     }
     .box-square{
-        min-width: 300px;
-        width: 300px;
+       max-width: 300px;
         /* height: 400px; */
         background-color: white;
-        margin: 20px;
+        /* margin: 20px; */
         padding: 20px;
         border-radius: 30px;
         font-size: 20px;
@@ -153,13 +156,14 @@
         text-align: justify;
         padding: 20px 10px;
     }
+
     .first-box2{
         background-color: #b2958b;
     }
 
     .box-title2{
         width: 100%;
-        font-size:8vw;
+        font-size:12vw;
         font-weight: bold;
         color: rgb(122, 63, 50);
         font-family: "Bungee";
@@ -179,7 +183,6 @@
     .background-pink2{
         background-color: #b2958b;
     }
-
     .background-picture{
         background-image: url('背景樹.png');
         background-repeat: no-repeat;
@@ -188,17 +191,12 @@
         height: 300px;
     }
     
-    .second-box{
-        background-color: #f09778;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-@media(max-width:800px){
+   
     .second-box{
         background-color: #f09778;
         flex-direction: column;
     }
+
     .motivation-box{
         width: 20%;
         min-width: 240px;
@@ -210,26 +208,14 @@
         order: 1;
         margin-top: 5%;
     }
-
+    
     .motivation-center{
         transform: translateY(5px);
         order: 2;
         margin: auto;
         margin-top: 5%;
     }
-}
-    .motivation-box{
-        width: 20%;
-        min-width: 240px;
-        max-width: 300px;
-        height: fit-content;
-        background-color: whitesmoke;
-        border-radius: 30px;    
-    }
-
-    .motivation-center{
-        transform: translateY(5px);
-    }
+    
     .rotate-left{
         animation: slide-up-down-left 2s infinite;
         animation-direction: alternate;
@@ -363,10 +349,10 @@
     }
 
     .question-title{
-        width: 500px; 
+        width: 80%; 
         margin: 0 auto ;
         font-weight: bold;
-        font-size: 25px;
+        font-size:clamp(12px, 5vw, 25px)
         color: rgb(57, 62, 60);
         padding-bottom: 50px;
     }
@@ -519,6 +505,7 @@
         width: 100%;
         padding-top: 50px;
         display: flex;
+        flex-wrap: wrap;
     }
 
     .white-box{
@@ -569,3 +556,4 @@
     .icon{
         margin-left: 40px;
     }
+}
