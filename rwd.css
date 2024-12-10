@@ -1,3 +1,23 @@
+@media(max-width:880px){
+    .bubble-left{
+        position: absolute;
+        left: 5%;
+        top: 20%;
+        animation: slide-up-down-left-bubble 2s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+
+    .bubble-right{
+        position: absolute;
+        right: 5%;
+        top: 55%;
+        animation: slide-up-down-right-bubble 2.3s infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+}
+
 @media(max-width:690px){
 body{
     margin: 0; padding: 0;
@@ -312,6 +332,7 @@ body{
 
     .motivation-content{
         width: 70%;
+        
         height: fit-content;
         background-color: whitesmoke;
         border-radius: 30px;
@@ -352,10 +373,10 @@ body{
     }
 
     .question-title{
-        width: 80%; 
+        width: 70%; 
         margin: 0 auto ;
         font-weight: bold;
-        font-size:clamp(12px, 5vw, 25px);
+        font-size:20px;
         color:rgb(57, 62, 60);
         padding-bottom: 50px;
     }
@@ -367,14 +388,17 @@ body{
     }
 
     .question-picture{
-        width: 400px; height: 250px;
+        width:70%; 
+        height: fit-content;
         background-color: whitesmoke;
         margin-right: 50px;
         border-radius: 30px;
+        margin: auto;
+        margin-bottom: 3%;
     }
 
     .question-text{
-        width: 500px; 
+        width: 70%; 
         font-weight:500;
         font-size: 15px;
         color: rgb(84, 84, 84);
@@ -448,7 +472,7 @@ body{
 
     .bubble-left{
         position: absolute;
-        left: 20%;
+        left: 2%;
         top: 20%;
         animation: slide-up-down-left-bubble 2s infinite;
         animation-direction: alternate;
@@ -457,7 +481,7 @@ body{
 
     .bubble-right{
         position: absolute;
-        right: 25%;
+        right: 5%;
         top: 55%;
         animation: slide-up-down-right-bubble 2.3s infinite;
         animation-direction: alternate;

@@ -326,6 +326,8 @@
 
     .motivation-content{
         width: 70%;
+        min-width:fit-content;
+        max-width: 680px;
         height: fit-content;
         background-color: whitesmoke;
         border-radius: 30px;
@@ -381,7 +383,9 @@
     .question-box{
         /* height: 500px; */
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        
     }
 
     .question-picture{
@@ -389,6 +393,7 @@
         background-color: whitesmoke;
         margin-right: 50px;
         border-radius: 30px;
+        margin-bottom: 3%;
     }
 
     .question-text{
@@ -460,7 +465,7 @@
     }
 
     .bubble:hover{
-        height: 250px; width:600px;
+        height: 250px; width:610px;
         border-radius: 125px;
     }
 
@@ -510,6 +515,7 @@
         position: absolute;
         right: 20px;
         width: 330px;
+        font-size: 15px;
     }
 
     .bubble:hover .bubble-answer{
