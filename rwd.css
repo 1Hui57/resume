@@ -415,6 +415,7 @@ body{
     .fourth-box{
         /* background-color: #d2f1fd; */
         background: linear-gradient(to bottom, #d2f1fd 0%,#79cbce 60% );
+        padding-bottom: 30%;
     }
 
     .background-picture3{
@@ -466,14 +467,14 @@ body{
     }
 
     .bubble:hover{
-        height: 250px; width:600px;
-        border-radius: 125px;
+        height:70%; width:70%;
+        border-radius: 50%;
     }
 
     .bubble-left{
         position: absolute;
         left: 2%;
-        top: 20%;
+        top: -10%;
         animation: slide-up-down-left-bubble 2s infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out;
@@ -482,7 +483,7 @@ body{
     .bubble-right{
         position: absolute;
         right: 5%;
-        top: 55%;
+        top: 30%;
         animation: slide-up-down-right-bubble 2.3s infinite;
         animation-direction: alternate;
         animation-timing-function: ease-in-out;
@@ -509,13 +510,17 @@ body{
         position: absolute;
         left:20px;
     }
+    .bubble:hover .bubble-text{
+        opacity: 0;
+    }
 
     .bubble-answer{
         opacity: 0;
         transition: opacity 1s ease 0.5s;
         position: absolute;
-        right: 20px;
-        width: 330px;
+        width: fit-content;
+        text-align: center;
+        padding: 2%;
     }
 
     .bubble:hover .bubble-answer{
@@ -533,10 +538,11 @@ body{
         padding-top: 50px;
         display: flex;
         flex-wrap: wrap;
+        padding-bottom: 50px;
     }
 
     .white-box{
-        width: 30%;
+        width: 340px;
         height: fit-content;
         margin-left: 80px;
         background-color: white;
@@ -548,18 +554,28 @@ body{
         padding-bottom: 30px;
     }
 
+    .last-question-text{
+        font-weight:500;
+        font-size: 15px;
+        color: rgb(84, 84, 84);
+        display: flex;
+        align-items: center;
+        line-height:27px;
+        font-family: "Chocolate Classical Sans";
+    }
+
     .other-box{
-        flex: auto;
-        height: 300px;
+        width: 50%;
+        height: fit-content;
         background-color: #c8aa77;
-        margin-left: 50px;
-        transform: translateY(-25px);
         border-radius: 30px 0 0 30px;
         padding: 50px;
+        margin-top: 5%;
+        margin-left: auto
     }
 
     .last-text{
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 500;
         text-align: end;
         color: rgb(84, 84, 84);
@@ -582,5 +598,16 @@ body{
 
     .icon{
         margin-left: 40px;
+    }
+}
+
+@media(max-width:580px){
+    .white-box{
+        width: 250px;
+        height: fit-content;
+        margin:0 auto;
+        background-color: white;
+        padding: 50px;
+        border-radius: 50px;
     }
 }
