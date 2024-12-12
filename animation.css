@@ -63,3 +63,16 @@
     animation: slide-from-right-to-left2 var(--fish-animate-time-3) infinite;
     animation-timing-function: ease-in-out;
 }
+@media(max-width:1130px){
+    .fish-picture {
+        opacity: 0.2;
+    }
+
+    .fish-picture2 {
+        opacity: 0.1;
+    }
+
+    .fish-picture3 {
+        opacity: 0.2;
+    }
+}

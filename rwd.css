@@ -18,6 +18,7 @@
     }
 }
 
+
 @media(max-width:690px){
 body{
     margin: 0; padding: 0;
@@ -467,7 +468,8 @@ body{
     }
 
     .bubble:hover{
-        height:70%; width:70%;
+        width: calc(250px * 1.45);
+        height: calc(250px * 1.45);
         border-radius: 50%;
     }
 
@@ -491,10 +493,10 @@ body{
 
     @keyframes slide-up-down-left-bubble{
         from{
-            transform: translateY(-40px) translateX(25px);  
+            transform: translateY(-40px) ;  
         }
         to{
-            transform: translateY(-60px) translateX(25px);
+            transform: translateY(-60px) ;
         }
     }   
     @keyframes slide-up-down-right-bubble{

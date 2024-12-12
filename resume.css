@@ -539,7 +539,7 @@
     }
 
     .bubble:hover .bubble-answer{
-        opacity: 1;
+        opacity: 1!important;
     }
 
     .bubble:not(:hover) .bubble-answer {
