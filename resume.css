@@ -378,6 +378,10 @@
         height: fit-content;
         padding: 5%;
         box-sizing: border-box;
+        font-family: "Chocolate Classical Sans";
+        font-weight:200;
+        font-size: 15px;
+        line-height:27px;
     }
 
     .background-picture2{
