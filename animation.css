@@ -85,6 +85,7 @@
     top: 50%;
     transform: translateY(-50%);
     animation: leftIn-and-out 8s linear infinite;
+    opacity: 0;
  }
 
  @keyframes leftIn-and-out{
